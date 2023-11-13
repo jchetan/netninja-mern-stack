@@ -5,7 +5,7 @@ const WorkoutDetails = ({workout}) => {
 
     const handleDelete = async () => {
         const response = await fetch(
-            '/api/workouts/' + workout._id,
+            'http://localhost:4000/api/workouts/' + workout._id,
             {
                 method: 'DELETE'
             }
