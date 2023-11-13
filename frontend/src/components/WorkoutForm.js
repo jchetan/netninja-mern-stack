@@ -33,7 +33,7 @@ const WorkoutForm = () => {
 
     return (
         <div className="row justify-content-center my-2">
-            <div className="col-8 border">
+            <div className="col-4 border">
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3">
                         <label htmlFor="workoutTitle" className="form-label">Workout Title</label>
@@ -65,7 +65,7 @@ const WorkoutForm = () => {
                             value={load}
                         />
                     </div>
-                    <button type="submit" className="btn btn-primary mb-3">Submit Workout</button>
+                    <button type="submit" className="btn btn-primary mb-3">Add Workout</button>
                     {message && 
                         <div>
                             {message}
