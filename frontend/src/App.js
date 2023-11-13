@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
+import AddNewWorkout from './pages/AddNewWorkout';
 
 function App() {
 
@@ -12,6 +13,10 @@ function App() {
           <Route
             path='/'
             element={<Home />}
+          />
+          <Route
+            path='/addnewworkout'
+            element={<AddNewWorkout />}
           />
         </Routes>
       </BrowserRouter>
